@@ -9,6 +9,7 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
   font-size: 46px;
+  font-family: "Erica One", cursive;
 `;
 
 export const Image = styled.img`
@@ -20,4 +21,5 @@ export const Image = styled.img`
 
 export const Quote = styled.blockquote`
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
 `;
