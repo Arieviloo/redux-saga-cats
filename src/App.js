@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { apiRequest } from "./store/actions";
+import { Container, Title, Image, Quote } from "./styles";
 
 function App() {
   const { catImageUrl, quoteText } = useSelector((state) => state);
@@ -13,14 +14,14 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="container">
-      <h1>Cats + Qoutes</h1>
+    <Container>
+      <Title>Cats + Qoutes</Title>
       <div className="row">
-        <img src={catImageUrl} alt="A cat" />
+        <Image src={catImageUrl} alt="A cat" />
       </div>
-      <blockquote>{quoteText}</blockquote>
+      <Quote>{quoteText}</Quote>
       <button onClick={handleClick}>Gimme more...</button>
-    </div>
+    </Container>
   );
 }
 
