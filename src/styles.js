@@ -23,3 +23,15 @@ export const Quote = styled.blockquote`
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 `;
+
+export const Button = styled.button`
+  width: 150px;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  :hover {
+    background-color: #fe3;
+  }
+`;
